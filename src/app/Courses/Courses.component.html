@@ -1,0 +1,12 @@
+<p>
+  Courses works for {{ title }}
+</p>
+<ul>
+  <li *ngFor="let course of courses">
+    {{ course }}
+  </li>
+</ul>
+
+<button class="btn btn-primary">Save</button>
+
+<input [(ngModel)]='email' (keyup.enter)='onKeyUp()' />
